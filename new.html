@@ -1,0 +1,960 @@
+<html>
+<head>
+ <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+.logo1 {
+margin-top:2%;
+margin-left:4%;
+}
+.logo img {
+width:60px;
+height:30px;
+}
+.logo2 {
+float:right;
+margin-right:4%;
+margin-top:-2%;
+}
+.logo2 img {
+width:60px;
+height:30px;
+}
+
+.Head {
+margin-top:10%;
+margin-left:3.5%;
+
+}
+.head {
+font-size:20px;
+
+line-height:60px;
+}
+.head1 {
+font-size:60px;
+
+}
+.table {
+
+margin-top:2%;
+}
+.table img {
+width:28px;
+height:28px;
+margin-bottom:4px;
+}
+
+.para a {
+text-decoration:none;
+}
+.para a:hover {
+text-decoration:underline;
+color:red;
+}
+button {
+
+padding:24px 60px;
+border-color:orange;
+border-radius:10px;
+font-size:20px;
+text-transform:uppercase;
+background-color:white;
+}
+button:hover {
+background-color:orange;
+color:white;
+}
+.image {
+
+margin-top:-38%;
+
+
+}
+.image img {
+width:700px;
+height:500px;
+float:right;
+}
+.main {
+display:flex; 
+width:auto;
+justify-content:center;
+text-align:center;
+margin-top:43%;
+}
+.card {
+margin-right:10px;
+background-color:orange;
+width:270px;
+height:300px;
+border-radius:10px;
+}
+.card1 img {
+width:40%;
+margin:15px;
+}
+.title {
+text-align:center;
+}
+.paragraph p {
+text-align:center;
+
+word-spacing:wrap;
+}
+.link a:hover {
+color:red;
+margin-bottom:5px;
+}
+.heading {
+font-size:30px;
+text-align:center;
+margin-top:8%;
+margin-bottom:6%;
+}
+
+.heading1 {
+width:50px;
+height:50px;
+border-radius:100%;
+background-color:orange;
+margin-left:8%;
+}
+.heading2 {
+border:1px solid white;
+width:30%;
+margin-top:-5%;
+margin-left:14%;
+}
+.heading2 h3 {
+font-size:20px;
+
+}
+.heading3 {
+width:50px;
+height:50px;
+border-radius:100%;
+background-color:orange;
+margin-left:54%;
+margin-top:-11%;
+}
+.heading4 {
+border:1px solid white;
+width:30%;
+margin-top:-5%;
+margin-left:60%;
+}
+.heading4 h3 {
+font-size:20px;
+}
+.heading5 {
+width:50px;
+height:50px;
+border-radius:100%;
+background-color:orange;
+margin-left:8%;
+}
+.heading6 {
+border:1px solid white;
+width:30%;
+margin-top:-5%;
+margin-left:14%; 
+}
+.heading6 h3 {
+font-size:20px;
+}
+.heading7 {
+width:50px;
+height:50px;
+border-radius:100%;
+background-color:orange;
+margin-left:54%;
+margin-top:-11%;
+}
+.heading8 {
+border:1px solid white;
+width:30%;
+
+margin-top:-5%;
+margin-left:60%;
+}
+.heading8 h3 {
+font-size:20px;
+}
+.border {
+border:1px solid rgb(210,210,210);
+background-color:hsla(300, 64%, 14%, 0.2);
+width:100%;
+height:90%;
+margin-top:10%;
+}
+.border1 {
+border:1px solid lightgray;
+margin-top:6%;
+margin-left:8%;
+width:30%;
+}
+.border2 {
+margin-top:9%;
+margin-left:4%;
+font-size:30px;
+text-transform:uppercase;
+}
+.border3 h1 {
+margin-left:4%;
+font-size:50px;
+}
+.border4 p {
+word-spacing:wrap;
+margin-left:4%;
+}
+.border5 p {
+margin-left:4%;
+}
+.border5 a {
+text-decoration:none;
+}
+.border5 a:hover {
+color:red;
+}
+.border6 img {
+width:1247px;
+height:522px;
+float:right;
+margin-top:-36.3%;
+margin-right:0%;
+}
+.raj1 {
+text-align:center;
+font-size:60px;
+margin-top:6%;
+}
+.shubham {
+display:flex; 
+justify-content:center;
+text-align:left;
+margin-top:5%;
+
+}
+.shubham1 {
+margin-right:10px;
+background-color:orange;
+width:370px;
+height:350px;
+border-radius:10px;
+}
+.dev {
+border:1px solid orange;
+width:330px;
+height:300px;
+margin:10px 20px;
+
+}
+
+.dev1 img {
+width:60px;
+height:60px;
+margin-left:4%;
+}
+.shubham2 {
+font-size:20px;
+
+}
+.shubham3 {
+font-size:20px;
+border-bottom:1px solid red;
+}
+.shubham4 p.role {
+font-size:20px;
+}
+
+
+.honor {
+margin-top:5%;
+
+}
+.honor img {
+width:700px;
+height:570px;
+
+}
+.honor1 {
+border:1px solid white;
+width:350px;
+height:450px;
+float:right;
+margin-top:-500px;
+margin-right:9%;
+}
+.honor2 {
+font-size:30px;
+}
+.honor3 {
+font-size:20px;
+}
+.honor4 {
+font-size:20px;
+}
+.honor5 {
+font-size:20px;
+}
+.honor5 a {
+text-decoration:none;
+}
+.honor5 a:hover {
+color:red;
+}
+.Button a:link, a:visited {
+background-color:white;
+color:orange;
+border:2px solid orange;
+border-radius:5px;
+padding:20px 40px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+}
+.Button a:hover, a:active {
+background-color:orange;
+color:white;
+}
+.dollar {
+border:1px solid orange;
+background-color:orange;
+width:100%;
+height:285%;
+margin-top:6%;
+}
+
+
+.school {
+margin-top:6%;
+}
+.school h1 {
+text-align:center;
+font-size:60px;
+}
+.school p {
+text-align:center;
+font-size:20px;
+}
+
+.Team {
+display:flex; 
+width:auto;
+justify-content:center;
+text-align:center;
+margin-left:3%;
+}
+.Team1 {
+border:2px solid orange;
+background-color:white;
+width:360px;
+height:600px;
+margin-top:5%;
+margin-right:30px;
+
+}
+.team3 {
+border:2px solid white;
+width:300px;
+height:580px;
+margin:10px 30px;
+text-align:left;
+}
+.team4 img {
+width:300px;
+height:280px;
+}
+.team5 {
+font-size:20px;
+
+}
+.team6 {
+font-size:20px;
+margin:2px 0px;
+}
+.team7 {
+font-size:20px;
+}
+.team9 img {
+margin-right:3px;
+}
+.change {
+font-size:20px;
+text-align:center;
+margin-top:3%;
+}
+.change a {
+text-decoration:none;
+}
+.change a:hover {
+color:blue;
+}
+
+.a1 {
+border:2px solid white;
+width:30%;
+height:70%;
+margin-top:10%;
+margin-left:5%;
+}
+.a2 {
+font-size:22px;
+}
+.a2 h1 {
+font-size:40px;
+}
+
+
+.a5 img {
+width:60%;
+height:90%;
+float:right;
+margin-top:-35%;
+}
+.b1 img {
+width:70%;
+height:100%;
+margin-top:10%; 
+margin-left:-12%;
+}
+.b2 {
+border:2px solid white;
+width:30%;
+height:100%;
+float:right;
+margin-top:-47%;
+margin-right:5%;
+}
+.b2 input {
+padding:10px 30px;
+border-color:orange;
+
+}
+.b2 label {
+font-weight:bold;
+font-size:20px;
+}
+.b2 legend {
+font-size:40px;
+font-weight:bold;
+text-align:center;
+}
+.b2 label a {
+text-decoration:none;
+}
+.b2 label a:hover {
+color:red;
+}
+.c {
+display:flex;
+
+justify-content:center;
+text-align:center;
+margin-top:10%;
+margin-left:3%;
+}
+.c1 {
+border:1px solid orange;
+background-color:orange;
+width:350px;
+height:180px;
+margin-right:30px;
+border-radius:10px;
+}
+.c2 {
+border:2px solid orange;
+width:300px;
+height:110px;
+margin:35px 25px 35px 25px;
+text-align:left;
+
+}
+.c3 {
+font-size:20px;
+color:white;
+}
+.c3 img {
+width:20px;
+height:20px;
+}
+.c4 p {
+font-size:20px;
+color:white;
+}
+.c5 {
+font-size:20px;
+margin-top:3%;
+text-align:center;
+}
+.d {
+background-color:black;
+width:100%;
+height:40%;
+margin-top:5%;
+}
+.d1 p {
+font-size:20px;
+text-align:center;
+color:white;
+padding:40px;
+}
+.d2 {
+color:white;
+margin-top:5%;
+text-align:center;
+}
+</style>
+
+<body>
+<div class="container-fluid">
+<div class="logo1">
+<img src="default-logo.png">
+</div>
+<div class="logo2">
+<img src="menu-icon-13.png">
+</div>
+</div>
+<div class="container-fluid">
+<div class="Head">
+<div class="head">Welcome To</div>
+<div class="head1">Dental Clinic</div>
+<div class="table">
+<table style="width:40%;">
+<tr>
+<th><img src="3179068.png"></th>
+<td>254 W 27ST ST, NEW YORK, NY 10011</td>
+</tr>
+<tr>
+<th><img src="864731.png">
+<td>​(212) 123-4567</td>
+</tr>
+<tr>
+<th><img src="3179068.png"></th>
+<td>341 W 11ST ST, NEW YORK, NY 10022</td>
+</tr>
+<tr>
+<th><img src="864731.png">
+<td>​(212) 123-4567</td>
+</tr>
+</table>
+</div>
+<div class="para">
+<p>Image from <a href="#"> Freepik </a></p>
+</div>
+
+<button>Book Online </button>
+</div>
+<div class="image">
+<img src="hhh7-min.jpg">
+</div>
+</div>
+<div class="main">
+<div class="card">
+<div class="card1">
+<img src="5577184.png">
+</div>
+<div class="title">
+<h1>Dental Care</h1>
+</div>
+<div class="paragraph">
+<p>Sample text. Click to select the text box.</p>
+</div>
+<div class="link">
+<a href="#">More</a>
+</div>
+</div>
+<div class="card">
+<div class="card1">
+<img src="5577184.png">
+</div>
+<div class="title">
+<h1>Oral Surgery</h1>
+</div>
+<div class="paragraph">
+<p>Sample text. Click to select the text box.</p>
+</div>
+<div class="link">
+<a href="#">More</a>
+</div>
+</div>
+<div class="card">
+<div class="card1">
+<img src="5577184.png">
+</div>
+<div class="title">
+<h1>Dental Bridges</h1>
+</div>
+<div class="paragraph">
+<p>Sample text. Click to select the text box.</p>
+</div>
+<div class="link">
+<a href="#">More</a>
+</div>
+</div>
+<div class="card">
+<div class="card1">
+<img src="5577184.png">
+</div>
+<div class="title">
+<h1>Teeth Cleaning</h1>
+</div>
+<div class="paragraph">
+<p>Sample text. Click to select the text box.</p>
+</div>
+<div class="link">
+<a href="#">More</a>
+</div>
+</div>
+</div>
+<div class="heading">
+<h1>Mission, Vision & History</h1>
+</div>
+
+<div class="heading1"></div>
+<div class="heading2">
+<h3>Mission</h3>
+<p class="role">Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. </p>
+</div>
+
+<div class="heading3"></div>
+<div class="heading4">
+<h3>Vision</h3>
+<p class="role">Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. </p>
+</div>
+
+<div class="heading5"></div>
+<div class="heading6">
+<h3>History</h3>
+<p class="role">Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. </p>
+</div>
+<div class="heading7"></div>
+<div class="heading8">
+<h3>Our Team</h3>
+<p class="role">Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. </p>
+</div>
+<div class="border">
+
+<div class="border1">
+<div class="border2">about us</div>
+<div class="border3"><h1>Dental Care Services</h1></div>
+<div class="border4"><p>Pretium lectus quam id leo in vitae turpis massa. Felis imperdiet proin fermentum leo vel orci. Auctor urna nunc id cursus metus aliquam. Rutrum tellus pellentesque. </p></div>
+<div class="border5"><p>Image from <a href="#"> Freepik </a></p></div>
+</div>
+<div class="border6">
+<img src="dentist-with-dentistry-tools-isolatedf-min.jpg">
+</div>
+</div>
+<div class="raj1">What People Say?</div>
+<div class="shubham">
+<div class="shubham1">
+<div class="dev">
+
+<div class="dev1">
+<img src="4338295-87931cfe.png">
+</div>
+<div class="shubham2">
+<h1>Stella Larson</h1>
+</div>
+<div class="shubham3">
+<p>Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Ut sem nulla pharetra diam sit amet nisl. </p>
+</div>
+
+<div class="shubham4">
+<p class="role">Monday, May 2022</p>
+</div>
+</div>
+</div>
+
+<div class="shubham1">
+<div class="dev">
+<div class="dev1">
+<img src="4338295-87931cfe.png">
+</div>
+<div class="shubham2">
+<h1>Nick Jhonson</h1>
+</div>
+<div class="shubham3">
+<p>Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Ut sem nulla pharetra diam sit amet nisl. </p>
+</div>
+<div class="shubham4">
+<p class="role">Monday, May 2022</p>
+</div>
+</div>
+</div>
+<div class="shubham1">
+<div class="dev">
+<div class="dev1">
+<img src="4338295-87931cfe.png">
+</div>
+<div class="shubham2">
+<h1>Olga Ivanova</h1>
+</div>
+<div class="shubham3">
+<p>Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Ut sem nulla pharetra diam sit amet nisl. </p>
+</div>
+<div class="shubham4">
+<p class="role">Monday, May 2022</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="Honor">
+<div class="honor">
+<img src="cvr4-min.jpg">
+</div>
+<div class="honor1">
+<div class="honor2">Dentistry Clinic</div>
+<div class="honor3">
+<h1>Quality Oral Health Care </h1>
+</div>
+<div class="honor4">
+<p>Nam libero justo laoreet sit amet cursus sit amet. Pellentesque habitant morbi tristique senectus et netus. Sed augue lacus viverra vitae congue eu. Nunc mattis enim ut tellus elementum sagittis vitae. </p>
+</div>
+<div class="honor5">
+<p class="honor6">Image from <a href="#">Freepik</a></p>
+</div>
+<div class="Button">
+<a href="#">CONTACT US </a>
+</div>
+</div>
+</div>
+
+<div class="dollar">
+
+
+<div class="school">
+
+<h1>Our Tea​m</h1>
+
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+</div>
+
+
+<div class="Team">
+
+<div class="Team1">
+<div class="team3">
+<div class="team4">
+<img src="1.jpg">
+</div>
+<div class="team5">General Dentist</div>
+<div class="team6">
+<h1>Dr. Bob Brown</h1>
+</div>
+<div class="team7">
+<p class="team8">Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum</p>
+</div>
+<div class="team9">
+<img src="1384005-a162ea23.png" style="width:50px;height:50px;">
+<img src="1362894-38ff784c.png" style="width:50px;height:50px;">
+</div>
+</div>
+</div>
+
+<div class="Team1">
+<div class="team3">
+<div class="team4">
+<img src="2.jpg">
+</div>
+<div class="team5">General Dentist</div>
+<div class="team6">
+<h1>Dr. Mary Smith </h1>
+</div>
+<div class="team7">
+<p class="team8">Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum</p>
+</div>
+<div class="team9">
+<img src="1384005-a162ea23.png" style="width:50px;height:50px;">
+<img src="1362894-38ff784c.png" style="width:50px;height:50px;">
+</div>
+</div>
+</div>
+
+<div class="Team1">
+<div class="team3">
+<div class="team4">
+<img src="jhhhj6.jpg">
+</div>
+<div class="team5">Orthodontist</div>
+<div class="team6">
+<h1>Dr. Nick Dark</h1>
+</div>
+<div class="team7">
+<p class="team8">Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum</p>
+</div>
+<div class="team9">
+<img src="1384005-a162ea23.png" style="width:50px;height:50px;">
+<img src="1362894-38ff784c.png" style="width:50px;height:50px;">
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<div class="Team">
+
+<div class="Team1">
+<div class="team3">
+<div class="team4">
+<img src="yy.jpg">
+</div>
+<div class="team5">Endodontist</div>
+<div class="team6">
+<h1>Dr. May Dowson</h1>
+</div>
+<div class="team7">
+<p class="team8">Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum</p>
+</div>
+<div class="team9">
+<img src="1384005-a162ea23.png" style="width:50px;height:50px;">
+<img src="1362894-38ff784c.png" style="width:50px;height:50px;">
+</div>
+</div>
+</div>
+
+<div class="Team1">
+<div class="team3">
+<div class="team4">
+<img src="gffgfgg.jpg">
+</div>
+<div class="team5">Pediatric Dentist</div>
+<div class="team6">
+<h1>Dr. Betty Nilson</h1>
+</div>
+<div class="team7">
+<p class="team8">Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum</p>
+</div>
+<div class="team9">
+<img src="1384005-a162ea23.png" style="width:50px;height:50px;">
+<img src="1362894-38ff784c.png" style="width:50px;height:50px;">
+</div>
+</div>
+</div>
+
+<div class="Team1">
+<div class="team3">
+<div class="team4">
+<img src="hghg.jpg">
+</div>
+<div class="team5">Orthodontist</div>
+<div class="team6">
+<h1>Dr. Adrian Scold</h1>
+</div>
+<div class="team7">
+<p class="team8">Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum</p>
+</div>
+<div class="team9">
+<img src="1384005-a162ea23.png" style="width:50px;height:50px;">
+<img src="1362894-38ff784c.png" style="width:50px;height:50px;">
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="change">Images from <a href="#">Freepik</a></div>
+</div>
+
+
+<div class="a1">
+<div class="a2">
+<p class="a3">Dentistry Clinic</p>
+<h1>Cosmetic
+Dentistry</h1>
+<p>Nam libero justo laoreet sit amet cursus sit amet. Pellentesque habitant morbi tristique senectus et netus. Sed augue lacus viverra vitae congue eu. Nunc mattis enim ut tellus elementum sagittis vitae.</p>
+<p class="a4">Image from <a href="#">Freepik</a></p>
+<div class="Button">
+<a href="#">CONTACT US </a>
+</div>
+</div>
+</div>
+
+
+<div class="a5">
+<img src="-min.jpg">
+</div>
+
+<div class="b1">
+<img src="-min1.jpg">
+</div>
+
+<div class="b2">
+<legend>
+Contact Us</legend><br>
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" placeholder="Enter your Name"><br><br>
+<label for="gmail">Email:</label><br>
+<input type="gmail" id="gmail" name="gmail" placeholder="Enter a valid email address"><br><br>
+<label for="msg">Message:</label><br>
+<input type="message" id="msg" name="msg" style="width:300px;height:200px;"><br><br>
+<input type="checkbox" id="box" name="box">
+<label for="box">I accept the <a href="#">Terms of Services </a></label><br><br>
+<div class="Button">
+<a href="#">SUBMIT </a>
+</div>
+</div>
+</div>
+
+<div class="c">
+
+<div class="c1">
+<div class="c2">
+<div class="c3">
+<img src="597177.png"> Call Us
+</div>
+<div class="c4">
+<p>1 (234) 567-891,</p>
+<p>1 (234) 987-654 <p>
+</div>
+</div>
+</div>
+
+<div class="c1">
+<div class="c2">
+<div class="c3">
+<img src="484167.png">  Location
+</div>
+<div class="c4">
+<p>121 Rock Sreet, 21 Avenue, New York, NY 92103-9000</p>
+
+</div>
+</div>
+</div>
+
+<div class="c1">
+<div class="c2">
+<div class="c3">
+<img src="1827379.png"> Hours 
+</div>
+<div class="c4">
+<p>Mon – Fri …… 11 am – 8 pm, Sat, Sun  …… 6 am – 8 pm </p>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="c5">Image from <a href="#">Freepik</a></div>
+
+<div class="d">
+<div class="d1">
+<p>Sample text. Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+</div>
+<div class="d2"><a href="#">Free Template </a>created with <a href="#"> Website Builder Software. </a></div>
+</div>
+</body>
+</html>

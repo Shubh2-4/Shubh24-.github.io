@@ -1,0 +1,539 @@
+<html>
+<head>
+<style>
+body {
+margin:0;
+}
+.a {
+position:relative;
+}
+.a1 img {
+position:relative;
+z-index:1;
+width:100%;
+height:100%;
+}
+.a2 {
+position:absolute;
+z-index:2;
+top:10%;
+left:28%;
+}
+.a2 h1 {
+font-size:60px;
+word-spacing:wrap;
+width:600px;
+text-align:center;
+color:orange;
+font-weight:bold;
+}
+.a2 p {
+font-size:20px;
+word-spacing:wrap;
+width:600px;
+text-align:center;
+margin-left:-5px;
+}
+.a2 a:link, a:visited {
+display:inline-block;
+border:5px solid green;
+border-radius:40px;
+text-align:center;
+padding:20px 35px;
+color:green;
+text-decoration:none;
+margin-left:200px;
+margin-top:20px;
+}
+.a2 a:hover, a:active {
+background-color:green;
+color:white;
+}
+
+.b1 {
+float:left;
+width:340px;
+margin-top:5%;
+border-radius:20px;
+background-color:orange;
+text-align:center;
+margin-right:0px;
+margin-left:60px;
+}
+.B1:nth-child(odd) {
+background-color:green;
+}
+
+.border {
+border:2px solid transparent;
+
+margin:20px;
+
+border-radius:20px;
+}
+
+
+.b2 img {
+width:100px;
+height:100px;
+background-color:white;
+padding:10px;
+border-radius:20px;
+}
+.b3 h1 {
+font-size:30px;
+}
+.b3 p {
+font-size:20px;
+}
+.b4 img {
+width:80px;
+height:80px;
+}
+}
+.c {
+position:relative;
+}
+.c1 {
+position:relative;
+z-index:1;
+width:100%;
+height:100%;
+background-color:orange;
+margin-top:44%;
+}
+.c2 {
+position:absolute;
+z-index:2;
+top:15%;
+left:18%;
+color:white;
+}
+.c2 h1 {
+font-size:70px;
+text-align:center;
+top:20px;
+margin-top:0px;
+}
+.c2 p {
+font-size:25px;
+text-align:center;
+word-spacing:wrap;
+width:800px;
+margin:auto;
+padding:auto;
+}
+.c2 a:link, a:visited {
+display:inline-block;
+border:5px solid green;
+border-radius:40px;
+text-align:center;
+padding:20px 35px;
+color:green;
+text-decoration:none;
+margin-left:310px;
+margin-top:50px;
+}
+.c2 a:hover, a:active {
+background-color:green;
+color:white;
+}
+.c3 {
+position:absolute;
+z-index:3;
+width:30px;
+height:500px;
+background-color:green;
+top:50px;
+left:0;
+}
+.c4 {
+position:absolute;
+z-index:4;
+width:30px;
+height:500px;
+background-color:green;
+top:50px;
+right:0;
+}
+.d {
+font-size:40px;
+text-align:center;
+color:green;
+}
+.d1 {
+display:flex;
+justify-content:center;
+margin-left:2.5%;
+}
+.d2 {
+border:1px solid transparent;
+border-radius:20px;
+width:350px;
+text-align:center;
+margin-right:30px;
+margin-bottom:40px;
+}
+.d2:nth-child(even) {
+background-color:green;
+}
+
+.d3 h1 {
+font-size:50px;
+color:orange;
+}
+.d3 h2 {
+font-size:40px;
+color:orange;
+}
+.d3 p {
+font-size:20px;
+word-spacing:wrap;
+width:290px;
+margin:30px;
+}
+
+.f1 {
+display:flex;
+justify-content:center;
+margin-left:2.5%; 
+}
+.f2 {
+border:1px solid transparent;
+border-radius:20px;
+width:350px;
+text-align:center;
+margin-right:30px; 
+}
+.f2:nth-child(odd) {
+background-color:orange;
+color:white;
+}
+.f3 h1 {
+font-size:50px;
+}
+.f3 h2 {
+font-size:40px;
+}
+.f3 p {
+font-size:20px;
+word-spacing:wrap;
+width:290px;
+margin:30px;
+}
+.g {
+position:relative;
+}
+.g1 {
+position:relative;
+z-index:1;
+width:100%;
+height:100%;
+background-color:orange;
+margin-top:5%;
+color:white;
+}
+.g2 {
+position:absolute;
+z-index:2;
+top:20%;
+left:20%;
+}
+.g2 h1 {
+font-size:70px;
+text-align:center;
+}
+.g2 p {
+font-size:22px;
+text-align:center;
+word-spacing:wrap;
+width:700px;
+}
+.g2 a:link, a:visited {
+display:inline-block;
+border:5px solid green;
+border-radius:40px;
+text-align:center;
+padding:20px 35px;
+color:green;
+text-decoration:none;
+margin-left:150px;
+margin-top:43.5px;
+}
+.g2 a:hover, a:active {
+background-color:green;
+color:white;
+}
+.g3 a:link, a:visited {
+position:absolute;
+z-index:3;
+display:inline-block;
+border:5px solid white;
+border-radius:40px;
+text-align:center;
+padding:20px 42.5px;
+color:white;
+text-decoration:none;
+margin-left:48%;
+margin-top:32.5%;
+}
+.g3 a:hover, a:active {
+background-color:white;
+color:orange;
+}
+.l1 {
+border:1px solid white;
+width:400px;
+height:380px;
+background-color:white;
+
+margin-top:5%;
+margin-left:5%;
+}
+.l1 h1 {
+font-size:30px;
+word-spacing:wrap;
+width:300px;
+color:green;
+}
+.l1 h3 {
+font-size:20px;
+}
+.l1 p {
+word-spacing:wrap;
+width:370px;
+font-size:20px;
+}
+.l2 a:link, a:visited {
+display:inline-block;
+border:5px solid green;
+border-radius:40px;
+text-align:center;
+padding:20px 35px;
+color:green;
+text-decoration:none;
+
+}
+.l2 a:hover, a:active {
+background-color:green;
+color:white;
+}
+.l3 {
+float:left;
+}
+.l3 img {
+width:35%;
+margin-left:560px;
+margin-top:-360px;
+}
+.l4 {
+position:relative;
+text-align:center;
+}
+.l5 {
+position:absolute;
+border:1px solid white;
+width:200px;
+height:340px;
+float:right;
+top:-380px;
+right:70px;
+
+}
+.l5 h1 {
+font-size:40px;
+color:green;
+}
+.l5 h2 {
+font-size:20px;
+}
+.l5 p {
+font-size:20px;
+word-spacing:wrap;
+width:200px;
+}
+</style>
+</head>
+<body>
+<div class="a">
+<div class="a1">
+<img src="vccvv-min.jpg">
+</div>
+<div class="a2">
+<h1>Happiness & Mindfulness Courses</h1>
+<p>Sample text. Click to select the text box. Click again or double click to start editing the text. Viverra maecenas accumsan lacus vel facilisis volutpat. Cras fermentum odio eu feugiat pretium nibh. </p>
+<a href="#">LEARN MORE</a>
+</div>
+</div>
+
+
+
+<div class="b1">
+<div class="border">
+<div class="b2">
+<img src="5680207-022cde27.png">
+</div>
+<div class="b3">
+<h1>Visualize it</h1>
+<p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+</div>
+<div class="b4">
+<img src="271226-52045be9.png">
+</div>
+</div>
+</div>
+
+<div class="b1">
+<div class="border">
+<div class="b2">
+<img src="5680207-022cde27.png">
+</div>
+<div class="b3">
+<h1>Create it</h1>
+<p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+</div>
+<div class="b4">
+<img src="271226-52045be9.png">
+</div>
+</div>
+</div>
+
+<div class="b1">
+<div class="border">
+<div class="b2">
+<img src="5680207-022cde27.png">
+</div>
+<div class="b3">
+<h1>Grow it</h1>
+<p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+</div>
+<div class="b4">
+<img src="271226-52045be9.png">
+</div>
+</div>
+</div>
+
+<div class="c">
+<div class="c1">
+<div class="c2">
+
+<h1>Welcome Message</h1>
+<p>Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. A lacus vestibulum sed arcu non. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Nec feugiat nisl pretium fusce id. Justo laoreet sit amet cursus sit amet. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero.
+</p>
+<a href="#">LEARN MORE</a>
+
+</div>
+
+<div class="c3"> </div>
+<div class="c4"> </div>
+
+</div>
+</div>
+
+<div class="d">
+<h1>Benefits of working with us </h1>
+</div>
+
+<div class="d1">
+
+<div class="d2">
+<div class="d3">
+<h1>01</h1>
+<h2>Hight Quality</h2>
+<p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+</div>
+</div>
+
+
+
+<div class="d2">
+<div class="d3">
+<h1 style="color:white;">02</h1>
+<h2 style="color:white;">Creative Team</h2>
+<p style="color:white;">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+</div>
+</div>
+
+
+
+<div class="d2">
+<div class="d3">
+<h1>03</h1>
+<h2>Amazing Results</h2>
+<p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+</div>
+</div>
+
+</div>
+
+
+<div class="f1">
+
+<div class="f2">
+<div class="f3">
+<h1>04</h1>
+<h2>Best Pricing</h2>
+<p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+</div>
+</div>
+
+
+
+<div class="f2">
+<div class="f3">
+<h1 style="color:orange;">05</h1>
+<h2 style="color:orange;">Innovations</h2>
+<p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+</div>
+</div>
+
+
+
+<div class="f2">
+<div class="f3">
+<h1>06</h1>
+<h2>24/7 Support</h2>
+<p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+</div>
+</div>
+
+</div>
+
+<div class="g">
+<div class="g1">
+<div class="g2">
+<h1>How Coaching Works</h1>
+<p>Simple Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum.</p>
+<a href="#">LEARN MORE</a>
+</div>
+<div class="g3"><a href="#">LIVE DEMO</a></div>
+
+</div>
+</div>
+
+
+
+<div class="l1">
+<h1>Each course of the program comprises:</h1>
+<h3>Tech Skills</h3>
+<p>We help businesses to innovate and grow by strengthening their ideas with our customized software solutions for multiple industries which includes healthcare, blockchain, education, insurance and many more.</p>
+<div class="l2"><a href="#">LEARN MORE</a></div>
+</div>
+
+<div class="l3">
+<img src="Untitled-1.png">
+</div>
+
+<div class="l4">
+<div class="l5">
+<h1>65%</h1>
+<h2>Sample Headline</h2>
+<p>Sample text. Click to select the Text Element.</p>
+<h1>20%</h1>
+<h2>Sample Headline</h2>
+<p>Sample text. Click to select the Text Element.</p>
+</div>
+</div>
+
+</body>
+</html>
